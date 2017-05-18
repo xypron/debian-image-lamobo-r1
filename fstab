@@ -1,0 +1,3 @@
+UUID=6a3836e6-e775-479c-bac8-9d2c316cb7cc / ext4 errors=remount-ro,noatime,nodiratime 0 1
+UUID=689de2b4-9b11-4a75-8dcb-56a1c384cf09 /boot ext2 noatime,nodiratime 0 2
+tmpfs	/tmp	tmpfs	nosuid	0	0
