@@ -1,8 +1,8 @@
-Build Debian SD card image for the Lamobo R1
+Build Debian SD card image for the Odroid C2
 ============================================
 
 This project provides files to generare a Debian SD card image
-for the Hardkernel Lamobo R1 on an arm system.
+for the Lamobo R1 on an arm system.
 
 The following command installs the dependencies:
 
@@ -18,10 +18,8 @@ A new image is created with two partions:
 - root partion
 
 Debootstrap is used to install a base system.
-The U-Boot and Linux kernel images are added from
-http://debian.xypron.de/.
 
-A sudo user *sunxi* with password *sunxi* is provided.
+A sudo user *lamobo* with password *lamobo* is provided.
 
 The created image file is called *image*.
 
