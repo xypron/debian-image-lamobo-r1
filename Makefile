@@ -1,4 +1,4 @@
-all: prepare mount debootstrap mount2 copy flash unmount compress
+all: unmount prepare mount debootstrap mount2 copy flash unmount compress
 
 prepare:
 	sudo rm -f image image.*
@@ -13,7 +13,7 @@ prepare:
 
 mount:
 	sudo losetup -o 1048576 --sizelimit 535822336 /dev/loop1 image
-	sudo losetup -o 536870912 /dev/loop2 image
+	sudo losetup -o 536870912 --sizelimit 2684354560 /dev/loop2 image
 	sudo mkdir -p mnt
 	sudo mount /dev/loop2 mnt
 
@@ -27,6 +27,7 @@ copy:
 	sudo cp eth0 mnt/etc/network/interfaces.d/
 	sudo cp fstab mnt/etc/
 	sudo cp flash-kernel mnt/etc/default/
+	sudo cp xypron.list mnt/etc/apt/sources.list.d/
 	sudo mkdir -p mnt/proc/device-tree/
 	sudo cp model mnt/proc/device-tree/
 	sudo cp setup.sh mnt
