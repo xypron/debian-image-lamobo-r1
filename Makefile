@@ -22,8 +22,6 @@ debootstrap:
 
 mount2:
 	sudo mount /dev/loop1 mnt/boot || true
-	sudo mount --bind /proc mnt/proc || true
-	sudo mount --bind /sys mnt/sys || true
 
 copy:
 	sudo cp eth0 mnt/etc/network/interfaces.d/
