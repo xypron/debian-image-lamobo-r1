@@ -12,8 +12,8 @@ prepare:
 	sudo losetup -d /dev/loop1 || true
 
 mount:
-	sudo losetup -o 1048576 --sizelimit 1072693248 /dev/loop1 image
-	sudo losetup -o 1073741824 /dev/loop2 image
+	sudo losetup -o 1048576 --sizelimit 535822336 /dev/loop1 image
+	sudo losetup -o 536870912 /dev/loop2 image
 	sudo mkdir -p mnt
 	sudo mount /dev/loop2 mnt
 
