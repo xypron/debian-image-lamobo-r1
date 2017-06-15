@@ -38,6 +38,7 @@ copy:
 	sudo cp fstab mnt/etc/
 	sudo cp flash-kernel mnt/etc/default/
 	sudo cp xypron.list mnt/etc/apt/sources.list.d/
+	sudo cp modules mnt/etc/modules
 	sudo mkdir -p mnt/proc/device-tree/
 	sudo cp model mnt/proc/device-tree/
 	sudo cp setup.sh mnt
