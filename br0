@@ -1,0 +1,2 @@
+auto br0
+iface br0 inet dhcp

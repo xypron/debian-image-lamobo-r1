@@ -34,7 +34,8 @@ mount2:
 	sudo mount /dev/loop1 mnt/boot || true
 
 copy:
-	sudo cp eth0 mnt/etc/network/interfaces.d/
+	sudo cp br0 mnt/etc/network/interfaces.d/
+	sudo cp switch mnt/etc/network/if-pre-up.d/
 	sudo cp fstab mnt/etc/
 	sudo cp flash-kernel mnt/etc/default/
 	sudo cp xypron.list mnt/etc/apt/sources.list.d/
