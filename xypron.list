@@ -1,3 +1,0 @@
-deb http://debian.xypron.de/ unstable/all/
-deb http://debian.xypron.de/ unstable/armhf/
-deb-src http://debian.xypron.de/ unstable/source/
