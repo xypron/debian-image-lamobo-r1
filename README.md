@@ -1,8 +1,9 @@
-Build Debian SD card image for the Odroid C2
+Build Debian SD card image for the Lamobo R1
 ============================================
 
 This project provides files to generare a Debian SD card image
-for the Lamobo R1 on an arm system.
+for the Lamobo R1 (aka Banana Pi Router and BPI-R1) on an arm
+system.
 
 The following command installs the dependencies:
 
